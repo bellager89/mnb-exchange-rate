@@ -1,0 +1,10 @@
+<header *ngIf="isLoggedIn()">
+    <nav>
+      <ul>
+        <li><a routerLink="/">Exchange rates</a></li>
+        <li><a routerLink="/saved">Saved exchange rates</a></li>
+        <li><a routerLink="/converter">HUF to EUR converter</a></li>
+      </ul>
+    </nav>
+    <span class="logout" (click)="logout()">Logout</span>
+  </header>

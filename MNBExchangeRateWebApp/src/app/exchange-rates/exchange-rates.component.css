@@ -1,0 +1,21 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .mat-elevation-z8 {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .mat-row:hover {
+    background-color: grey;
+  }

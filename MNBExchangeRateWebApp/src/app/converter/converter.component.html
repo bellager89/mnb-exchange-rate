@@ -1,0 +1,16 @@
+<div class="exchange-rate-container">
+  <h2>HUF to EUR Exchange Rate Calculator</h2>
+
+  <div class="input-container">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Enter HUF Value:</mat-label>
+      <input matInput type="number" id="hufInput" #hufInput placeholder="Enter HUF value">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="full-width" (click)="calculateExchangeRate()">Calculate</button>
+  </div>
+
+  <div *ngIf="eurValue !== undefined" class="result-container">
+    <p>The calculated EUR value for {{ hufValue }} HUF is: {{ eurValue | number : '.2-2' }}</p>
+  </div>
+</div>
